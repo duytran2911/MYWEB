@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shop Online</title>
+    <link rel="stylesheet" href="./css/index.css">
+
+</head>
+
+<body>
+
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar">
+
+        <div class="logo">MyShop</div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="register.html">Đăng ký</a></li>
+            <li><a href="login.html">Đăng nhập</a></li>
+            <li><a href="admin.html">Quản lí</a></li>
+            <span class="cart">
+                🛒
+                <span class="cart-badge" id="cart-count">0</span>
+            </span>
+
+        </ul>
+
+    </nav>
+    <div class="banner">
+
+        <div class="slides">
+            <img src="BannerDep.png" class="slide active">
+            <img src="BannerXau.png" class="slide">
+        </div>
+
+        <button class="prev">❮</button>
+        <button class="next">❯</button>
+
+    </div>
+
+    <div class="container">
+
+        <div class="header">
+            <h1>Sản phẩm</h1>
+            <button id="logout-btn">Đăng xuất</button>
+        </div>
+
+        <div id="product-grid" class="product-grid"></div>
+
+    </div>
+    <!-- Cart Modal -->
+    <div class="cart-overlay" id="cart-overlay"></div>
+    <div class="cart-modal" id="cart-modal">
+        <div class="cart-header">
+            <h2>Giỏ hàng</h2>
+            <button class="close-cart" id="close-cart">&times;</button>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <div class="empty-cart">Giỏ hàng trống</div>
+        </div>
+        <div class="cart-total" id="cart-total">
+            Tổng: 0₫
+        </div>
+        <button class="checkout-btn" id="checkout-btn">Thanh toán</button>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>© 2026 MyShop. All rights reserved.</p>
+            <p>Email: qduy1399@gmail.com</p>
+            <p>Số liên lạc: 0347858829</p>
+        </div>
+
+    </footer>
+
+
+    <script src="https://www.gstatic.com/firebasejs/12.8.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/12.8.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/12.8.0/firebase-firestore-compat.js"></script>
+
+    <script src="./config.js"></script>
+
+    <script src="./js/index.js"> 
+    </script>
+
+</body>
+
+</html>

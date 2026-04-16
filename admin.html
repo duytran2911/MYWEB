@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Quản lý sản phẩm</title>
+    <link rel="stylesheet" href="./css/admin.css">
+    
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar">
+
+        <div class="logo">MyShop</div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="register.html">Đăng ký</a></li>
+            <li><a href="login.html">Đăng nhập</a></li>
+        </ul>
+
+    </nav>
+
+    <div class="container">
+
+        <div class="header">
+            <h1>Quản lý sản phẩm</h1>
+            <button id="logout-btn">Đăng xuất</button>
+        </div>
+
+        <button id="toggle-form-btn" class="btn-add">Thêm sản phẩm mới</button>
+
+        <div id="add-product-form" class="add-product-form">
+
+            <form id="product-form">
+
+                <div class="form-group">
+                    <label>Tên sản phẩm</label>
+                    <input type="text" id="product-name" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Giá</label>
+                    <input type="number" id="product-price" required>
+                </div>
+
+                <div class="form-group">
+                    <label>URL hình ảnh</label>
+                    <input type="text" id="product-image" required>
+                </div>
+
+                <button type="submit" class="btn-submit">Thêm sản phẩm</button>
+
+            </form>
+
+        </div>
+
+        <div class="table-container">
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>STT</th>
+                        <th>Hình ảnh</th>
+                        <th>Tên sản phẩm</th>
+                        <th>Giá</th>
+                        <th>Thao tác</th>
+                    </tr>
+                </thead>
+
+                <tbody id="product-list"></tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/12.8.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/12.8.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/12.8.0/firebase-firestore-compat.js"></script>
+
+    <script src="./config.js"></script>
+
+    <script src="./js/admin.js">
+    </script>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>© 2026 MyShop. All rights reserved.</p>
+            <p>Email: qduy1399@gmail.com</p>
+            <p>Số liên lạc: 0347858829</p>
+        </div>
+    </footer>
+</body>
+
+</html>

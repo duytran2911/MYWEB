@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập</title>
+
+    <link rel="stylesheet" href="login-register.css">
+    <link rel="stylesheet" href="./css/login.css">
+    
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar">
+
+        <div class="logo">MyShop</div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="register.html">Đăng ký</a></li>
+            <li><a href="login.html">Đăng nhập</a></li>
+            <li><a href="admin.html">Quản lí</a></li>
+        </ul>
+
+    </nav>
+
+    <!-- LOGIN FORM -->
+
+    <div class="form-container">
+
+        <form id="login-form">
+
+            <h2>Đăng nhập tài khoản</h2>
+
+            <div>
+                <label for="inp-email">Email</label>
+                <input type="email" id="inp-email" autocomplete="email" required>
+            </div>
+
+            <div>
+                <label for="inp-pwd">Mật khẩu</label>
+                <input type="password" id="inp-pwd" autocomplete="current-password" required>
+            </div>
+
+            <button type="submit">Đăng nhập</button>
+
+        </form>
+
+    </div>
+
+    <!-- FIREBASE -->
+
+    <script src="https://www.gstatic.com/firebasejs/12.8.0/firebase-app-compat.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/12.8.0/firebase-auth-compat.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/12.8.0/firebase-firestore-compat.js"></script>
+
+    <script src="config.js"></script>
+
+    <script src="./js/login.js">
+    </script>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>© 2026 MyShop. All rights reserved.</p>
+            <p>Email: qduy1399@gmail.com</p>
+            <p>Số liên lạc: 0347858829</p>
+        </div>
+    </footer>
+</body>
+
+</html>
